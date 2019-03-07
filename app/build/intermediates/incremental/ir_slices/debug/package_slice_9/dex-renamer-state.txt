@@ -1,0 +1,4 @@
+#Mon Feb 18 14:45:41 BRT 2019
+base.0=/Users/cordeiroigor/Documents/Aga.Mobile.Android/app/build/intermediates/transforms/dexMerger/debug/9
+path.0=classes.dex
+renamed.0=classes.dex

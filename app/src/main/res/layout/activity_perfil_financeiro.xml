@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:theme="@style/AppTheme.ActionBar.Toolbar"
+            app:popupTheme="@style/AppTheme.PopUp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:background="@color/perfilBackgroundGeral"
+        android:paddingBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AppTheme.PerfilText"
+                android:text="Status de Credito da Loja" />
+
+            <EditText
+                android:id="@+id/txt_status_financeiro"
+                style="@style/AppTheme.PerfilEditTextDisabled"
+                android:hint="Informe situação da loja" />
+
+            <TextView
+                style="@style/AppTheme.PerfilText"
+                android:text="Loja em Negociação" />
+
+            <EditText
+                android:id="@+id/txt_em_negociacao"
+                style="@style/AppTheme.PerfilEditTextDisabled"
+                android:hint="Loja em Negociação" />
+
+            <TextView
+                style="@style/AppTheme.PerfilText"
+                android:text="Limite de Crerito" />
+
+            <EditText
+                android:id="@+id/txt_limite"
+                style="@style/AppTheme.PerfilEditTextDisabled"
+                android:hint="Informe limite de crédito" />
+
+            <TextView
+                style="@style/AppTheme.PerfilText"
+                android:text="Saldo devedor" />
+
+            <EditText
+                android:id="@+id/txt_saldo"
+                style="@style/AppTheme.PerfilEditTextDisabled"
+                android:hint="Informe Saldo"
+                android:imeOptions="actionDone" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

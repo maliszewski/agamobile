@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.agafarma.agamobile"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+
+    <application
+        android:name="br.com.agafarma.agamobile.Service.Aplicacao"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/agafarma"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.SplashActivity"
+            android:theme="@style/AppCompat.TelaCheia" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.PerguntaActivity"
+            android:label="@string/title_activity_pergunta"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaAvisoActivity"
+            android:label="@string/title_activity_aviso"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.AvisoActivity"
+            android:label="@string/title_activity_aviso"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaQuestionarioActivity"
+            android:label="@string/title_activity_questionario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaCircularActivity"
+            android:label="@string/title_activity_circular"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.CircularActivity"
+            android:label="@string/title_activity_circular"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaFotoActivity"
+            android:label="@string/title_activity_foto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.PerfilActivity"
+            android:label="@string/title_activity_perfil"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.PerfilGeralActivity"
+            android:label="@string/title_activity_perfil_geral"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.PerfilContatoActivity"
+            android:label="@string/title_activity_perfil_contato"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.PerfilEncarteActivity"
+            android:label="@string/title_activity_perfil_encarte"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.PerfilFinanceiroActivity"
+            android:label="@string/title_activity_perfil_financeiro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.PerfilLocalizacaoActivity"
+            android:label="@string/title_activity_perfil_localizacao"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.PerfilDiversoActivity"
+            android:label="@string/title_activity_perfil_diverso"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaMqttActivity"
+            android:label="@string/title_activity_mqtt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.MqttMensageActivity"
+            android:label="@string/title_activity_mqtt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaContatoActivity"
+            android:label="@string/title_activity_contato"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.BoletoActivity"
+            android:label="@string/title_activity_boleto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaBoletoActivity"
+            android:label="@string/title_activity_boleto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.TituloActivity"
+            android:label="@string/title_activity_boleto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ErrorActivity"
+            android:label="@string/title_error"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaCampanhaActivity"
+            android:label="@string/title_activity_campanha"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="br.com.agafarma.agamobile.Service.SincronizaService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="br.com.agafarma.agamobile.Service.NotificacaoService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="br.com.agafarma.agamobile.Service.MqttService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:stopWithTask="false" />
+
+        <receiver
+            android:name="br.com.agafarma.agamobile.Service.BootAndroidReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="BootReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="br.com.agafarma.agamobile.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

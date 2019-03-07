@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/loginEditTextTxtFocus" android:drawable="@drawable/focus_edittxtlogin" android:state_focused="true" />
+    <item android:color="@color/loginEditTextTxtNFocus" android:drawable="@drawable/simple_edittxtlogin" />
+</selector>

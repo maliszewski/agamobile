@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:theme="@style/AppTheme.ActionBar.Toolbar"
+            app:popupTheme="@style/AppTheme.PopUp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:background="@color/perfilBackgroundGeral"
+            android:paddingBottom="65dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Contato" />
+
+                <EditText
+                    android:id="@+id/txt_contato"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe nome de um contato para Loja" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Email" />
+
+                <EditText
+                    android:id="@+id/txt_email"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe o email de contato"
+                    android:inputType="textEmailAddress" />
+
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="DDD" />
+
+                <EditText
+                    android:id="@+id/txt_ddd"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe o DDD de sua região"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Telefone" />
+
+                <EditText
+                    android:id="@+id/txt_telefone"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe o número de telefone da Loja"
+                    android:inputType="number" />
+
+                <Switch
+                    android:id="@+id/sw_tele_entrega"
+                    style="@style/AppTheme.PerfilSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tele Entrega" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Horário Tele Entrega" />
+
+                <EditText
+                    android:id="@+id/txt_tele_entrega_horario"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe o horário do funcionamento da tele entrega "
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Telefône da Tele Entrega" />
+
+                <EditText
+                    android:id="@+id/txt_tele_entrega_telefone"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe o numero do telefone da tele entrega "
+                    android:imeOptions="actionDone"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/btn_salvar"
+                    style="@style/AppTheme.Button"
+                    android:layout_marginTop="20dp"
+                    android:text="Salvar" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

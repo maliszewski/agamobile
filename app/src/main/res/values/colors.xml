@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="hintBackMenu">#ef1304</color>
+    <color name="hintFontMenu">#ffffff</color>
+
+    <color name="hintBackEdit">#ff343f4b</color>
+
+    <color name="menuFonte">#ff343f4b</color>
+    <color name="menuBackground">#d1d2d0</color>
+    <color name="menuIcone">#dab702</color>
+    <color name="menuCardBackground">#ffffff</color>
+
+    <color name="menuPFIncio">#bfbebe</color>
+    <color name="menuPFMeio">#d1cfcf</color>
+    <color name="menuPFFim">#e6e4e4</color>
+
+
+    <color name="colorCinza">#66000000</color>
+    <color name="colorBranco">#ffffff</color>
+    <color name="colorAmarelo">#fbd200</color>
+    <color name="colorAmareloEscuro">#dab702</color>
+    <color name="colorAzul">#5037cf</color>
+    <color name="colorAzulEscuro">#303F9F</color>
+
+    <color name="loginBack">#fff6d50f</color>
+    <color name="loginEditTextBackFocus">#ffdcdcdc</color>
+    <color name="loginEditTextBackNFocus">#ffffffff</color>
+    <color name="loginEditTextTxtFocus">#ff5a6978</color>
+    <color name="loginEditTextTxtNFocus">#ff343f4b</color>
+
+    <color name="btnBack">#ff0067a0</color>
+    <color name="btnFont">#ffffffff</color>
+
+    <color name="menuEsquedaBack">#ff766b67</color>
+    <color name="menuEsquedaBackItem">#ffbfb7b4</color>
+    <color name="menuEsquedaFont">#ff766b67</color>
+    <color name="menuEsquedaIcone">#ffdab702</color>
+    <color name="menuEsquedaSubMenuFont">#ffffffff</color>
+
+    <color name="toolBarBack">#fffbd200</color>
+    <color name="toolBarBackDark">#ffdab702</color>
+    <color name="toolBarFont">#ff766b67</color>
+
+    <color name="questionarioFonteDetalhe">#ff766b67</color>
+    <color name="questionarioFonteTitulo">#ff766b67</color>
+
+    <color name="circularFonteDetalhe">#ff766b67</color>
+    <color name="circularFonteTitulo">#ff766b67</color>
+
+    <color name="campanhaFonteDetalhe">#ff766b67</color>
+    <color name="campanhaFonteTitulo">#ff766b67</color>
+
+    <color name="respostaFonteDetalhe">#ff766b67</color>
+    <color name="respostaFonteTitulo">#ff766b67</color>
+
+    <color name="perguntaFonteDetalhe">#ff766b67</color>
+    <color name="perguntaFonteTitulo">#ff766b67</color>
+
+    <color name="perfilFonteTitulo">#ff766b67</color>
+    <color name="perfilBordaFoto">#ffffffff</color>
+    <color name="perfilBackground">#ffdab702</color>
+    <color name="perfilEstrelaCheia">#ff0067a0</color>
+    <color name="perfilEstrelaVazada">#ffffffff</color>
+    <color name="perfilBackgroundGeral">#f5f4f4</color>
+    <color name="perfilEditTextDesabilitadoFundo">#ff5a6978</color>
+    <color name="perfilEditTextDesabilitadoLetra">#ffdcdcdc</color>
+
+    <color name="chatBack">#f4e4b7</color>
+    <color name="charLetraNomeUsuario">#ff766b67</color>
+    <color name="chatParaBackMsg">#ffdab702</color>
+    <color name="chatParaLetraMsg">#ffffffff</color>
+    <color name="chatVoceLetraMsg">#ffffffff</color>
+    <color name="chatVoceBackMsg">#ff0067a0</color>
+
+    <color name="contatoFonteApelido">#ff766b67</color>
+
+    <color name="boletoFonteTitulo">#ff766b67</color>
+    <color name="boletoFonteDetalhe">#ff766b67</color>
+
+    <color name="campanhaItemFonteTitulo">#ff766b67</color>
+    <color name="campanhaItemFonteDetalhe">#ff766b67</color>
+
+</resources>

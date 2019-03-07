@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:theme="@style/AppTheme.ActionBar.Toolbar"
+            app:popupTheme="@style/AppTheme.PopUp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:background="@color/perfilBackgroundGeral"
+            android:paddingBottom="65dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Região" />
+
+                <RadioGroup
+                    android:id="@+id/rbtGrupoRegiao"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtRegiao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="1" />
+
+                    <RadioButton
+                        android:id="@+id/rbtRegiao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2" />
+
+                    <RadioButton
+                        android:id="@+id/rbtRegiao3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3" />
+
+                    <RadioButton
+                        android:id="@+id/rbtRegiao4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4" />
+
+                    <RadioButton
+                        android:id="@+id/rbtRegiao5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="5" />
+
+                </RadioGroup>
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Sistema ERP" />
+
+                <EditText
+                    android:id="@+id/txt_sistema_erp"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe o Sistema ERP"
+                    android:inputType="textEmailAddress" />
+
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Metragem Total(m)" />
+
+                <EditText
+                    android:id="@+id/txt_metragem"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe a metragem total da loja (metros)"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Metragem Área Venda(m)" />
+
+                <EditText
+                    android:id="@+id/txt_metragem_venda"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe metragem da área venda da loja (metros)"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Tamanho" />
+
+                <RadioGroup
+                    android:id="@+id/rbtGrupoTamanho"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtPequeno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="P" />
+
+                    <RadioButton
+                        android:id="@+id/rbtMedio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="M" />
+
+                    <RadioButton
+                        android:id="@+id/rbtGrande"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="G" />
+                </RadioGroup>
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Número Funcionários" />
+
+                <EditText
+                    android:id="@+id/txt_numero_funcioanrio"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe o quantidade de funcionários "
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Cluster" />
+
+                <RadioGroup
+                    android:id="@+id/rbtGrupoCluster"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbtPremium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="1"
+                        android:text="PN" />
+
+                    <RadioButton
+                        android:id="@+id/rbtPremiumCompacta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="2"
+                        android:text="PC" />
+
+                    <RadioButton
+                        android:id="@+id/rbtBasica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="3"
+                        android:text="BN" />
+
+                    <RadioButton
+                        android:id="@+id/rbtBasicaCompacta"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="4"
+                        android:text="BC" />
+
+                </RadioGroup>
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Pardão de Loja" />
+
+                <RadioGroup
+                    android:id="@+id/rbtGrupoPadraoLoja"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RadioButton
+                        android:id="@+id/rbtTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="1"
+                        android:text="Total" />
+
+                    <RadioButton
+                        android:id="@+id/rbtNenhum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="2"
+                        android:text="Nenhum" />
+
+                    <RadioButton
+                        android:id="@+id/rbtEspacoClinico"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="3"
+                        android:text="Espaço Clinico" />
+
+                    <RadioButton
+                        android:id="@+id/rbtFachada"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="4"
+                        android:text="Fachada" />
+
+                    <RadioButton
+                        android:id="@+id/rbtLayoutInterno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:tag="5"
+                        android:text="Layout Interno" />
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btn_salvar"
+                    style="@style/AppTheme.Button"
+                    android:layout_marginTop="20dp"
+                    android:text="Salvar" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

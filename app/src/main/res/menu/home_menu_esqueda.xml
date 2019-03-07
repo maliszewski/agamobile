@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menuAviso"
+            android:icon="@drawable/ic_luz_black_24dp"
+            android:title="Avisos" />
+        <item
+            android:id="@+id/menuAgenda"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Agenda" />
+        <item
+            android:id="@+id/menuCliente"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Meus Clientes" />
+        <item
+            android:id="@+id/menuFormularioConsultar"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Consultar" />
+        <item
+            android:id="@+id/menuFormularioEnviar"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Enviar" />
+        <item
+            android:id="@+id/menuLogoff"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Sair" />
+    </group>
+</menu>

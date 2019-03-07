@@ -1,0 +1,144 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+        <item name="colorAccent">@color/toolBarBack</item>
+        <item name="colorPrimary">@color/toolBarBack</item>
+        <item name="colorPrimaryDark">@color/toolBarBackDark</item>
+    </style>
+
+    <style name="AppTheme.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:height">150dp</item>
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+        <item name="background">@color/toolBarBack</item>
+        <item name="height">60dp</item>
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleText</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/toolBarFont</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.Button" parent="@style/AppTheme">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/btnFont</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="AppTheme.Login.Text" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="background">@drawable/focus_edittxtlogin</item>
+    </style>
+
+    <style name="AppTheme.LoginEditText" parent="@style/AppTheme">
+        <item name="android:textSize">19sp</item>
+        <item name="android:background">@drawable/edittext_selector</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Toolbar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/toolBarFont</item>
+        <item name="android:textColorSecondary">@color/toolBarFont</item>
+        <item name="android:textColor">@color/toolBarFont</item>
+        <item name="android:background">@color/toolBarBack</item>
+    </style>
+
+    <style name="AppTheme.Menu" parent="@style/AppTheme">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/menuEsquedaSubMenuFont</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/menuEsquedaBack</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="itemBackground">@color/menuEsquedaBackItem</item>
+        <item name="itemIconTint">@color/menuEsquedaIcone</item>
+        <item name="itemTextColor">@color/menuEsquedaFont</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="@style/AppTheme">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.NoActionBarTelaCheia" parent="@style/AppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.PopUp" parent="@style/ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AppCompat.TelaCheia" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.PerfilEditText" parent="@style/AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/edittext_selector</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="AppTheme.PerfilEditTextDisabled" parent="@style/AppTheme.PerfilEditText">
+        <item name="android:background">@drawable/edittext_shape_desabilitado</item>
+        <item name="android:textColor">@color/perfilEditTextDesabilitadoLetra</item>
+        <item name="android:enabled">false</item>
+    </style>
+
+    <style name="AppTheme.PerfilText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.PerfilSwitch" parent="@style/AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="AppTheme.ChatEditText" parent="@style/AppTheme">
+        <item name="android:textSize">19sp</item>
+        <item name="android:background">@drawable/edittext_selector</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="AppTheme.ChatButton" parent="@style/AppTheme">
+        <item name="android:textSize">19sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/btnFont</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/chatbutton</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">70dp</item>
+    </style>
+
+    <style name="AppTheme.ContatoEditText" parent="@style/AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/edittext_selector</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+</resources>

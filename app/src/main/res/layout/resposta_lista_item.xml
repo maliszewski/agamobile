@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RadioButton
+        android:id="@+id/resposta_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:onClick="RadioOnClick" />
+
+    <CheckBox
+        android:id="@+id/resposta_check"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/resposta_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="5dp"
+            android:text="resposta_titulo"
+            android:textColor="@color/respostaFonteTitulo"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/resposta_descricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="resposta_descricao"
+            android:textColor="@color/respostaFonteDetalhe"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>

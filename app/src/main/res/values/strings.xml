@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AgaMobile</string>
+    <string name="title_activity_login">Entrar</string>
+    <string name="nav_menu_esqueda_abrir">Abrir Menu Esquerda</string>
+    <string name="nav_menu_esqueda_fechar">Fechar  Menu Esquerda</string>
+    <string name="title_activity_pergunta">Pergunta</string>
+    <string name="title_activity_aviso">Avisos</string>
+    <string name="title_activity_questionario">Questionarios</string>
+    <string name="title_activity_circular">Circular</string>
+    <string name="title_activity_foto">Fotos Selecionadas</string>
+    <string name="title_activity_perfil">Perfil</string>
+    <string name="title_activity_perfil_geral">Perfil Cadastral</string>
+    <string name="title_activity_perfil_localizacao">Perfil Localização</string>
+    <string name="title_activity_perfil_contato">Perfil Contato</string>
+    <string name="title_activity_perfil_encarte">Perfil Encarte</string>
+    <string name="title_activity_perfil_financeiro">Perfil Financeiro</string>
+    <string name="title_activity_mqtt">Mensagens</string>
+    <string name="title_activity_contato">Contatos</string>
+    <string name="title_activity_boleto">Boleto</string>
+    <string name="title_error">Problemas</string>
+    <string name="title_activity_perfil_diverso">Diverso</string>
+    <string name="title_activity_campanha">Campanhas</string>
+
+</resources>

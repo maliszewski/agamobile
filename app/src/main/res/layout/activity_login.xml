@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/loginBack"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconeagafarma" />
+
+            <EditText
+                android:id="@+id/txtCpf"
+                style="@style/AppTheme.LoginEditText"
+                android:hint="CPF/CNPJ (Sem ponto ou traços)"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtSenha"
+                style="@style/AppTheme.LoginEditText"
+                android:hint="Senha"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/btnEntrar"
+                style="@style/AppTheme.Button"
+                android:layout_marginTop="20dp"
+                android:text="Entrar" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

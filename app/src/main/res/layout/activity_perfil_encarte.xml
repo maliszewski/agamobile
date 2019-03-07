@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:theme="@style/AppTheme.ActionBar.Toolbar"
+            app:popupTheme="@style/AppTheme.PopUp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="@color/perfilBackgroundGeral">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AppTheme.PerfilText"
+                android:text="Quantidade Encarte" />
+
+            <EditText
+                android:id="@+id/txt_qt_encarte"
+                style="@style/AppTheme.PerfilEditTextDisabled"
+                android:hint="Informe quantidade de encarte que gostaria de receber" />
+
+            <TextView
+                style="@style/AppTheme.PerfilText"
+                android:text="Quantidade Encarte Excedente" />
+
+            <EditText
+                android:id="@+id/txt_qt_encarte_excedente"
+                style="@style/AppTheme.PerfilEditText"
+                android:hint="Informe quantidade de encarte a mais que gostaria de receber"
+                android:inputType="number" />
+
+            <TextView
+                style="@style/AppTheme.PerfilText"
+                android:text="Quantidade Folheto" />
+
+            <EditText
+                android:id="@+id/txt_qt_folheto"
+                style="@style/AppTheme.PerfilEditTextDisabled"
+                android:hint="Informe quantidade de folheto" />
+
+            <TextView
+                style="@style/AppTheme.PerfilText"
+                android:text="Quantidade Folheto Excedente" />
+
+            <EditText
+                android:id="@+id/txt_qt_folheto_Excedente"
+                style="@style/AppTheme.PerfilEditText"
+                android:hint="Informe quantidade de folheto a mais que gostaria de receber"
+                android:imeOptions="actionDone"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btn_salvar"
+                style="@style/AppTheme.Button"
+                android:layout_marginTop="20dp"
+                android:text="Salvar" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

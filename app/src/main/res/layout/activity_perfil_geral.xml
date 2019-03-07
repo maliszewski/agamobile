@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:theme="@style/AppTheme.ActionBar.Toolbar"
+            app:popupTheme="@style/AppTheme.PopUp" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="55dp"
+            android:background="@color/perfilBackgroundGeral"
+            android:paddingBottom="65dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="CNPJ" />
+
+                <EditText
+                    android:id="@+id/txt_cnpj"
+                    style="@style/AppTheme.PerfilEditTextDisabled"
+                    android:hint="Informe CNPJ"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Razão Social" />
+
+                <EditText
+                    android:id="@+id/txt_razao_social"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe Razão Social" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Nome Fantasia" />
+
+                <EditText
+                    android:id="@+id/txt_nome_fantasia"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe Nome Fantasia" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Inscrição Estadual" />
+
+                <EditText
+                    android:id="@+id/txt_inscricao_estadual"
+                    style="@style/AppTheme.PerfilEditTextDisabled"
+                    android:hint="Informe Inscrição Estadual"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="CPF Proprietário" />
+
+                <EditText
+                    android:id="@+id/txt_cpf_proprietario"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe CPF Proprietário"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Nome Proprietário" />
+
+                <EditText
+                    android:id="@+id/txt_nome_proprietario"
+                    style="@style/AppTheme.PerfilEditText"
+                    android:hint="Informe Nome Proprietário" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Tipo de Loja" />
+
+                <EditText
+                    android:id="@+id/txt_tipo_loja"
+                    style="@style/AppTheme.PerfilEditTextDisabled"
+                    android:hint="Informe Tipo Loja" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Farmacia Popular" />
+
+                <EditText
+                    android:id="@+id/txt_farmacia_popular"
+                    style="@style/AppTheme.PerfilEditTextDisabled"
+                    android:hint="Possui Farmacia Popular" />
+
+                <TextView
+                    style="@style/AppTheme.PerfilText"
+                    android:text="Cooperada" />
+
+                <EditText
+                    android:id="@+id/txt_cooperada"
+                    style="@style/AppTheme.PerfilEditTextDisabled"
+                    android:hint="Informe Cooperada"
+                    android:imeOptions="actionDone" />
+
+                <Button
+                    android:id="@+id/btn_salvar"
+                    style="@style/AppTheme.Button"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:text="Salvar" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

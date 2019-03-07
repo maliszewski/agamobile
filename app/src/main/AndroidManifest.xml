@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.agafarma.agamobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name="br.com.agafarma.agamobile.Service.Aplicacao"
+        android:allowBackup="true"
+        android:icon="@drawable/agafarma"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider
+            android:name="br.com.agafarma.agamobile.Util.GenericFileProvider"
+            android:authorities="${applicationId}.my.package.name.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:theme="@style/AppCompat.TelaCheia">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.PerguntaActivity"
+            android:label="@string/title_activity_pergunta"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ListaAvisoActivity"
+            android:label="@string/title_activity_aviso"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.AvisoActivity"
+            android:label="@string/title_activity_aviso"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ListaQuestionarioActivity"
+            android:label="@string/title_activity_questionario"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ListaCircularActivity"
+            android:label="@string/title_activity_circular"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.CircularActivity"
+            android:label="@string/title_activity_circular"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ListaFotoActivity"
+            android:label="@string/title_activity_foto"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.PerfilActivity"
+            android:label="@string/title_activity_perfil"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.PerfilGeralActivity"
+            android:label="@string/title_activity_perfil_geral"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.PerfilContatoActivity"
+            android:label="@string/title_activity_perfil_contato"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.PerfilEncarteActivity"
+            android:label="@string/title_activity_perfil_encarte"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.PerfilFinanceiroActivity"
+            android:label="@string/title_activity_perfil_financeiro"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.PerfilLocalizacaoActivity"
+            android:label="@string/title_activity_perfil_localizacao"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.PerfilDiversoActivity"
+            android:label="@string/title_activity_perfil_diverso"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ListaMqttActivity"
+            android:label="@string/title_activity_mqtt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.MqttMensageActivity"
+            android:label="@string/title_activity_mqtt"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ListaContatoActivity"
+            android:label="@string/title_activity_contato"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.BoletoActivity"
+            android:label="@string/title_activity_boleto"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ListaBoletoActivity"
+            android:label="@string/title_activity_boleto"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.TituloActivity"
+            android:label="@string/title_activity_boleto"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ErrorActivity"
+            android:label="@string/title_error"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="br.com.agafarma.agamobile.Activity.ListaCampanhaActivity"
+            android:label="@string/title_activity_campanha"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="br.com.agafarma.agamobile.Service.SincronizaService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="br.com.agafarma.agamobile.Service.NotificacaoService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="br.com.agafarma.agamobile.Service.MqttService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:stopWithTask="false" />
+
+
+        <receiver
+            android:name="br.com.agafarma.agamobile.Service.BootAndroidReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="BootReceiver"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
